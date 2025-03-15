@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Growth Vision</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+</head>
+<body>
+
+    <nav class="main-nav">
+        <div class="logo">
+            <img src="assets/css/assets/images/Growth Vision.jpg" alt="Growth Vision Logo">
+            <h4>Growth Vision</h4>
+        </div>
+        <span class="menu-icon" onclick="toggleMenu()">&#9776;</span>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-container">
+      <div class="contact-header">
+          <h2 class="animate__animated animate__fadeInDown">Contact <span>Us</span></h2>
+          <p>We'd love to hear from you. Please drop us a message below!</p>
+      </div>
+      <div class="contact-form-wrapper">
+          <form id="contact-form">
+              <div class="input-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your name" required>
+              </div>
+              <div class="input-group">
+                  <label for="email">Your Email</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+              </div>
+              <div class="input-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" placeholder="Subject of your message" required>
+              </div>
+              <div class="input-group">
+                  <label for="message">Your Message</label>
+                  <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+              </div>
+              <button type="button" class="btn-submit" onclick="sendEmail()">Send Message</button>
+              <p id="form-message" style="display:none; color: green; margin-top: 10px;">Message Sent Successfully!</p>
+          </form>
+      </div>
+  </section>
+  
+
+  
+
+    <!-- Google Maps -->
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3662853.387328241!2d76.18279917749384!3d23.25993329069542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c42616a28d7d7%3A0x3b1e6b0a34236b88!2sBhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1649355304294!5m2!1sen!2sin" 
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </div>
+
+    <!-- Floating Contact Button -->
+    <div class="floating-contact">
+        <a href="contact.html"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <div class="whatsapp-fixed">
+      <a href="https://wa.me/<7049316389>" target="_blank">
+        <img src="/assets/css/assets/images/whatsapp.png" alt="WhatsApp">
+      </a>
+    </div>
+
+    <footer style="background-color: #1a1a1a; color: #ddd; padding: 40px 20px; font-family: 'Arial', sans-serif;">
+      <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; text-align: center;">
+  
+          <!-- Logo & About -->
+          <div style="flex: 1 1 300px;">
+              <img src="assets/css/assets/images/Growth Vision.jpg" alt="Growth Vision Logo" style="max-width: 120px; height: auto; border-radius: 10%;">
+              <p style="color: #bbb; margin-top: 10px; font-size: 14px;">Delivering top-notes services with excellence and dedication.</p>
+          </div>
+  
+          <!-- Contact Info -->
+          <div style="flex: 1 1 300px;">
+              <h3 style="color: #fff; margin-bottom: 10px;">Contact Us</h3>
+              <p style="color: #bbb; font-size: 14px; margin: 5px 0;"><i class="fas fa-map-marker-alt"></i> Kalpana Nagar, Bhoapl, Madhya Pradesh</p>
+              <p style="color: #bbb; font-size: 14px; margin: 5px 0;"><i class="fas fa-phone"></i> +91 7869504279 </p>
+              <p style="color: #bbb; font-size: 14px; margin: 5px 0;"><i class="fas fa-envelope"></i> rsravishah7172@gmail.com</p>
+          </div>
+  
+          <!-- Quick Links -->
+          <div style="flex: 1 1 300px;">
+              <h3 style="color: #fff; margin-bottom: 10px;">Quick Links</h3>
+              <ul style="list-style: none; padding: 0;">
+                  <li><a href="about.html" style="text-decoration: none; color: #bbb; font-size: 14px; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#bbb'">About Us</a></li>
+                  <li><a href="portfolio.html" style="text-decoration: none; color: #bbb; font-size: 14px; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#bbb'">Portfolio</a></li>
+                  <li><a href="contact.html" style="text-decoration: none; color: #bbb; font-size: 14px; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#bbb'">Contact Us</a></li>
+              </ul>
+          </div>
+  
+          <!-- Social Media -->
+          <div style="flex: 1 1 300px;">
+            <h3 style="color: #fff; margin-bottom: 10px;">Follow Us</h3>
+            <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                <a href=" https://x.com/RAVIKUMARSAHU78" target="_blank">
+                    <img src="/assets/css/assets/images/twitter.webp" alt="Twitter" 
+                        style="width: 30px; transition: transform 0.3s;" 
+                        onmouseover="this.style.transform='scale(1.2)'" 
+                        onmouseout="this.style.transform='scale(1)'">
+                </a>
+                <a href="https://www.linkedin.com/in/ravi-kumar-sahu-746765219/" target="_blank">
+                    <img src="/assets/css/assets/images/linkedin-logo.webp" alt="LinkedIn" 
+                        style="width: 30px; transition: transform 0.3s;" 
+                        onmouseover="this.style.transform='scale(1.2)'" 
+                        onmouseout="this.style.transform='scale(1)'">
+                </a>
+                <a href="https://www.instagram.com/aiwithravii" target="_blank">
+                    <img src="/assets/css/assets/images/instagram.png" alt="Instagram" 
+                        style="width: 30px; transition: transform 0.3s;" 
+                        onmouseover="this.style.transform='scale(1.2)'" 
+                        onmouseout="this.style.transform='scale(1)'">
+                      </a>
+                      <a href="https://www.producthunt.com/@ravi_sahu7" target="_blank">
+                          <img src="/assets/css/assets/images/product.png" alt="Product Hunt" 
+                              style="width: 30px; transition: transform 0.3s;" 
+                              onmouseover="this.style.transform='scale(1.2)'" 
+                              onmouseout="this.style.transform='scale(1)'">
+                      </a>
+                <!-- <a href="https://www.facebook.com/profile.php?id=100054705468888" target="_blank">
+                    <img src="/assets/css/assets/images/facebook.png" alt="Facebook" 
+                        style="width: 30px; transition: transform 0.3s;" 
+                        onmouseover="this.style.transform='scale(1.2)'" 
+                        onmouseout="this.style.transform='scale(1)'">
+                </a> -->
+            </div>
+        </div>
+        
+  
+      </div>
+  
+      <!-- Bottom Section -->
+      <div style="margin-top: 20px; text-align: center; font-size: 14px; color: #bbb;">
+          <p>&copy; 2024 Growth Vision. All rights reserved.</p>
+          <p><a href="/privacy" style="text-decoration: none; color: #bbb; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#bbb'">Privacy Policy</a> | <a href="/terms" style="text-decoration: none; color: #bbb; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#bbb'">Terms of Service</a></p>
+      </div>
+  </footer>
+  
+
+    <!-- JavaScript for Enhancements -->
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("form-message").style.display = "block";
+            setTimeout(() => {
+                document.getElementById("form-message").style.display = "none";
+                document.getElementById("contact-form").reset();
+            }, 3000);
+        });
+    </script>
+      <script>
+        function sendEmail() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let subject = document.getElementById("subject").value;
+            let message = document.getElementById("message").value;
+    
+            let mailtoLink = `mailto:rsravishah7172@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("Name: " + name + "\nEmail: " + email + "\n\nMessage: " + message)}`;
+    
+            window.location.href = mailtoLink;
+            
+            document.getElementById("form-message").style.display = "block";
+        }
+    </script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

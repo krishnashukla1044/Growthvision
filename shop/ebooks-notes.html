@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Cards with Navigation</title>
+    <link rel="stylesheet" href="./assets//css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f3ec78, #af4261);
+            margin: 0;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: linear-gradient(145deg, #ffffff, #e4e4e4);
+            border-radius: 20px;
+            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.2), -8px -8px 15px rgba(255, 255, 255, 0.5);
+            overflow: hidden;
+            width: 300px;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), -10px -10px 20px rgba(255, 255, 255, 0.6);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 0 0 10px;
+            color: #333;
+        }
+
+        .card-description {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .card-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #af4261;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .card-link:hover {
+            background: #f3ec78;
+            color: #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Card 1 -->
+        <a href="https://drive.google.com/file/d/1d9pNa8ri0I56DYV6TgUUduOPKIJTkL98/view" class="card">
+            <!-- <img src="https://via.placeholder.com/300x200" alt="Ebook Cover"> -->
+            <div class="card-content">
+                <div class="card-title">Data Structure</div>
+                <div class="card-description">Learn the fundamentals of programming with this beginner-friendly guide.
+                    Perfect for those new to computer science concepts.</div>
+                <div class="card-link">Read More</div>
+            </div>
+        </a>
+
+        <!-- Card 2 -->
+        <a href="https://drive.google.com/file/d/1cy6bTqBOJUB9eQypy0AUWNVnrssk7FLQ/view" class="card">
+            <!-- <img src="https://via.placeholder.com/300x200" alt="Ebook Cover"> -->
+            <div class="card-content">
+                <div class="card-title">Cloud Computing</div>
+                <div class="card-description">Enhance your understanding of cloud technologies and take your programming
+                    skills to the next level with this advanced resource.
+
+                </div>
+                <div class="card-link">Read More</div>
+            </div>
+        </a>
+
+        <!-- Card 3 -->
+        <a href="https://drive.google.com/file/d/1dFx_lY1EkzrVHZUF-vjipe6UksaAVPgM/view" class="card">
+            <!-- <img src="https://via.placeholder.com/300x200" alt="Ebook Cover"> -->
+            <div class="card-content">
+                <div class="card-title">APIs</div>
+                <div class="card-description">Uncover the secrets to designing, building, and integrating APIs for
+                    creating efficient and user-friendly web applications.
+
+                </div>
+                <div class="card-link">Read More</div>
+            </div>
+        </a>
+
+        <!-- Card 4 -->
+        <a href="https://drive.google.com/file/d/1dEJJGZ0OF4VfYgkiUn_P6fbK7IfPkZEF/view" class="card">
+            <!-- <img src="https://via.placeholder.com/300x200" alt="Ebook Cover"> -->
+            <div class="card-content">
+                <div class="card-title">AI The Future</div>
+                <div class="card-description">Explore the world of Artificial Intelligence with this detailed guide,
+                    focusing on its impact and the potential it holds for shaping our future.</div>
+                <div class="card-link">Read More</div>
+            </div>
+        </a>
+
+        <!-- Card 5 -->
+        <a href="https://drive.google.com/file/d/1cti-t-pD7VqEyS1cBsuGWHscFcfLbLmn/view" class="card">
+            <!-- <img src="https://via.placeholder.com/300x200" alt="Ebook Cover"> -->
+            <div class="card-content">
+                <div class="card-title">Machine Learning </div>
+                <div class="card-description">Build a solid foundation in machine learning with this essential resource,
+                    designed to help you master key concepts and techniques.</div>
+                <div class="card-link">Read More</div>
+            </div>
+        </a>
+
+        <!-- card-6 -->
+        <a href="https://drive.google.com/file/d/1dETO3F8b4AShcoLnKgj9M0K9TIGklbgh/view" class="card">
+            <!-- <img src="https://via.placeholder.com/300x200" alt="Ebook Cover"> -->
+            <div class="card-content">
+                <div class="card-title">Cyber Security</div>
+                <div class="card-description">Gain critical insights into protecting systems and data from cyber threats. This guide is essential for understanding the fundamentals of cybersecurity.</div>
+                <div class="card-link">Read More</div>
+            </div>
+        </a>
+
+        <!-- card-7 -->
+        <a href="https://drive.google.com/file/d/1cxBrMYRq5fpn3aqE0XiUVh-xlSjtmMv6/view" class="card">
+            <!-- <img src="https://via.placeholder.com/300x200" alt="Ebook Cover"> -->
+            <div class="card-content">
+                <div class="card-title">Data Analysis </div>
+                <div class="card-description">Dive into the world of data analytics with practical techniques and tools to analyze and interpret data effectively.</div>
+                <div class="card-link">Read More</div>
+            </div>
+        </a>
+
+        <!-- card-8 -->
+        <a href="https://drive.google.com/file/d/1cxZzAPgLy98MRzmByKcRTvmfVCvB77eB/view" class="card">
+            <!-- <img src="https://via.placeholder.com/300x200" alt="Ebook Cover"> -->
+            <div class="card-content">
+                <div class="card-title">React.Js </div>
+                <div class="card-description">Master the fundamentals of React.js, the powerful JavaScript library for building dynamic and responsive user interfaces.</div>
+                <div class="card-link">Read More</div>
+            </div>
+
+            <!-- card-9 -->
+
+        </a> <a href="https://drive.google.com/file/d/1cwyFoeZlV0IbWFD9BwLLBjp4YSAaGVbN/view" class="card">
+            <!-- <img src="https://via.placeholder.com/300x200" alt="Ebook Cover"> -->
+            <div class="card-content">
+                <div class="card-title">SQL Language </div>
+                <div class="card-description">Learn the foundations of SQL, the backbone of database management, and unlock the power of querying and managing structured data efficiently.</div>
+                <div class="card-link">Read More</div>
+            </div>
+        </a>
+
+    </div>
+
+    
+    <footer style="background-color: #1a1a1a; color: #ddd; padding: 40px 20px; font-family: 'Arial', sans-serif;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; text-align: center;">
+    
+            <!-- Logo & About -->
+            <div style="flex: 1 1 300px;">
+                <img src="../assets/css/assets/images/Growth Vision.jpg" alt="Growth Vision Logo" style="max-width: 120px; height: auto; border-radius: 10%;">
+                <p style="color: #bbb; margin-top: 10px; font-size: 14px;">Delivering top-notes services with excellence and dedication.</p>
+            </div>
+    
+            <!-- Contact Info -->
+            <div style="flex: 1 1 300px;">
+                <h3 style="color: #fff; margin-bottom: 10px;">Contact Us</h3>
+                <p style="color: #bbb; font-size: 14px; margin: 5px 0;"><i class="fas fa-map-marker-alt"></i> Kalpana Nagar, Bhoapl, Madhya Pradesh</p>
+                <p style="color: #bbb; font-size: 14px; margin: 5px 0;"><i class="fas fa-phone"></i> +91 7869504279 </p>
+                <p style="color: #bbb; font-size: 14px; margin: 5px 0;"><i class="fas fa-envelope"></i> rsravishah7172@gmail.com</p>
+            </div>
+    
+            <!-- Quick Links -->
+            <div style="flex: 1 1 300px;">
+                <h3 style="color: #fff; margin-bottom: 10px;">Quick Links</h3>
+                <ul style="list-style: none; padding: 0;">
+                    <li><a href="../about.html" style="text-decoration: none; color: #bbb; font-size: 14px; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#bbb'">About Us</a></li>
+                    <li><a href="../portfolio.html" style="text-decoration: none; color: #bbb; font-size: 14px; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#bbb'">Portfolio</a></li>
+                    <li><a href="../contact.html" style="text-decoration: none; color: #bbb; font-size: 14px; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#bbb'">Contact Us</a></li>
+                </ul>
+            </div>
+    
+            <!-- Social Media -->
+            <div style="flex: 1 1 300px;">
+              <h3 style="color: #fff; margin-bottom: 10px;">Follow Us</h3>
+              <div style="display: flex; justify-content: center; gap: 15px; flex-wrap: wrap;">
+                  <a href=" https://x.com/RAVIKUMARSAHU78" target="_blank">
+                      <img src="/assets/css/assets/images/twitter.webp" alt="Twitter" 
+                          style="width: 30px; transition: transform 0.3s;" 
+                          onmouseover="this.style.transform='scale(1.2)'" 
+                          onmouseout="this.style.transform='scale(1)'">
+                  </a>
+                  <a href="https://www.linkedin.com/in/ravi-kumar-sahu-746765219/" target="_blank">
+                      <img src="/assets/css/assets/images/linkedin-logo.webp" alt="LinkedIn" 
+                          style="width: 30px; transition: transform 0.3s;" 
+                          onmouseover="this.style.transform='scale(1.2)'" 
+                          onmouseout="this.style.transform='scale(1)'">
+                  </a>
+                  <a href="https://www.instagram.com/aiwithravii" target="_blank">
+                      <img src="/assets/css/assets/images/instagram.png" alt="Instagram" 
+                          style="width: 30px; transition: transform 0.3s;" 
+                          onmouseover="this.style.transform='scale(1.2)'" 
+                          onmouseout="this.style.transform='scale(1)'">
+                        </a>
+                        <a href="https://www.producthunt.com/@ravi_sahu7" target="_blank">
+                            <img src="/assets/css/assets/images/product.png" alt="Product Hunt" 
+                                style="width: 30px; transition: transform 0.3s;" 
+                                onmouseover="this.style.transform='scale(1.2)'" 
+                                onmouseout="this.style.transform='scale(1)'">
+                        </a>
+                  <!-- <a href="https://www.facebook.com/profile.php?id=100054705468888" target="_blank">
+                      <img src="/assets/css/assets/images/facebook.png" alt="Facebook" 
+                          style="width: 30px; transition: transform 0.3s;" 
+                          onmouseover="this.style.transform='scale(1.2)'" 
+                          onmouseout="this.style.transform='scale(1)'">
+                  </a> -->
+              </div>
+          </div>
+          
+    
+        </div>
+    
+        <!-- Bottom Section -->
+        <div style="margin-top: 20px; text-align: center; font-size: 14px; color: #bbb;">
+            <p>&copy; 2024 Growth Vision. All rights reserved.</p>
+            <p><a href="/privacy" style="text-decoration: none; color: #bbb; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#bbb'">Privacy Policy</a> | <a href="/terms" style="text-decoration: none; color: #bbb; transition: color 0.3s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='#bbb'">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
