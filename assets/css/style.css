@@ -9,6 +9,7 @@
 .main-nav {
   overflow: hidden;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: #333;
@@ -24,6 +25,7 @@
 .logo img {
   height: 40px;
   margin-right: 10px;
+  border-radius: 5px;
 }
 
 .logo h4 {
