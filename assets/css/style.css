@@ -77,6 +77,16 @@
     /* background-color: #333; */
   }
 
+   .logo {
+    flex-direction: column; /* Stacks image and text */
+    text-align: center;
+  }
+
+  .logo img {
+    height: 35px; /* Slightly smaller for compact screens */
+    margin-right: 0; /* Removes spacing issue */
+  }
+
   .nav-links li {
     margin: 10px 0;
     text-align: center;
